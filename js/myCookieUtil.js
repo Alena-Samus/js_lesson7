@@ -1,5 +1,5 @@
 let myCookieUtil = {
-
+  
     get: function (name){
         let cookieName = encodeURIComponent(name) + "=",
             cookieStart = document.cookie.indexOf(cookieName),
@@ -13,7 +13,7 @@ let myCookieUtil = {
             }
             cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));
         } 
-
+   
         return cookieValue;
     },
     
